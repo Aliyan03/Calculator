@@ -17,7 +17,7 @@
     <h1 style="text-align: center">
         CALCULATOR
     </h1>
-    <div  class="d-flex w-50 justify-content-center align-items-center container" style="height: 80vh;">
+    <div  class="d-flex w-50 justify-content-center align-items-center container" style="height: 100vh;">
 
         <table class="table">
             <thead>
@@ -28,42 +28,67 @@
                 </tr>
             </thead>
             <tbody>
-              <tr>
-                <td><button onclick="get_num('Math.sin')" class="btn btn-info w-100 text-center">sin</button></td>
-                <td><button onclick="get_num('Math.cos')" class="btn btn-info w-100 text-center">cos</button></td>
-                <td><button onclick="get_num('Math.tan')" class="btn btn-info w-100 text-center">tan</button></td>
-                <td><button onclick="get_num('Math.E')" class="btn btn-info w-100 text-center">e</button></td>
-            </tr>
+                <tr>
+                    <td><button onclick="get_num('Math.sin')" class="btn btn-info w-100 text-center">sin</button></td>
+                    <td><button onclick="get_num('Math.cos')" class="btn btn-info w-100 text-center">cos</button></td>
+                    <td><button onclick="get_num('Math.tan')" class="btn btn-info w-100 text-center">tan</button></td>
+                    <td><button onclick="get_num('Math.E')" class="btn btn-info w-100 text-center">e</button></td>
+                </tr>
+              
+                <tr>
+                    <td><button onclick="get_num('Math.asin')" class="btn btn-info w-100 text-center">sin-1</button></td>
+                    <td><button onclick="get_num('Math.acos')" class="btn btn-info w-100 text-center">cos-1</button></td>
+                    <td><button onclick="get_num('Math.atan')" class="btn btn-info w-100 text-center">tan-1</button></td>
+                    <td><button onclick="get_num('Math.PI')" class="btn btn-info w-100 text-center">π</button></td>
+
+                </tr>
+
+               
+                <tr>
+                    <td><button onclick="get_num('Math.pow')" class="btn btn-info w-100 text-center">^</button></td>
+                    <td><button onclick="get_num('Math.sqrt')" class="btn btn-info w-100 text-center">√</button></td>
+                    <td><button onclick="get_num('Math.log')" class="btn btn-info w-100 text-center">ln</button></td>
+                    <td><button onclick="get_num('Math.log10')" class="btn btn-info w-100 text-center">log</button></td>
+                </tr>
+
+             
                 <tr>
                     <td><button  onclick="clearResult()" class="btn btn-info w-100 text-center">Clear</button></td>
                     <td><button onclick="clear_num('*')"class="btn btn-info w-100 text-center"><i class="fa-solid fa-delete-left"></i></button></td>
-                    <td><button onclick="get_num('%')" class="btn btn-info w-100 text-center">%</button></td>
-                    
-                  <td><button class="btn btn-info w-100 text-center">/</button></td>
+                    <td><button onclick="get_num('%')" class="btn btn-info w-100 text-center"><i class="fa-solid fa-percent"></i></button></td>
+                    <td><button class="btn btn-info w-100 text-center"><i class="fa-solid fa-divide"></i></button></td>
                 </tr>
                 <tr>
                     <td><button onclick="get_num('7')" class="btn btn-secondary w-100 text-center">7</button></td>
                     <td><button onclick="get_num('8')" class="btn btn-secondary w-100 text-center">8</button></td>
                     <td><button onclick="get_num('9')" class="btn btn-secondary w-100 text-center">9</button></td>
-                    <td><button onclick="get_num('*')" class="btn btn-info w-100 text-center">*</button></td>
+                    <td><button onclick="get_num('*')" class="btn btn-info w-100 text-center"><i class="fa-solid fa-xmark"></i></button></td>
                 </tr>
                 <tr>
                     <td><button onclick="get_num('4')" class="btn btn-secondary w-100 text-center">4</button></td>
                     <td><button onclick="get_num('5')" class="btn btn-secondary w-100 text-center">5</button></td>
                     <td><button onclick="get_num('6')" class="btn btn-secondary w-100 text-center">6</button></td>
-                    <td><button class="btn btn-info w-100 text-center">-</button></td>
+                    <td><button class="btn btn-info w-100 text-center"><i class="fa-solid fa-minus"></i></button></td>
                 </tr>
                 <tr>
                     <td><button onclick="get_num('1')" class="btn btn-secondary w-100 text-center">1</button></td>
                     <td><button onclick="get_num('2')" class="btn btn-secondary w-100 text-center">2</button></td>
                     <td><button onclick="get_num('3')" class="btn btn-secondary w-100 text-center">3</button></td>
-                    <td><button onclick="get_num('+')" class="btn btn-info w-100 text-center">+</button></td>
+                    <td><button onclick="get_num('+')" class="btn btn-info w-100 text-center"><i class="fa-solid fa-plus"></i></button></td>
                 </tr>
                 <tr>
                     <td><button onclick="get_num('0')" class="btn btn-secondary w-100 text-center">0</button></td>
-                    <td><button onclick="getResult()" class="btn btn-info w-100 text-center">=</button></td>
                     <td><button onclick="get_num('&#40')" class="btn btn-info w-100 text-center">&#40</button></td>
                     <td><button onclick="get_num('&#41')" class="btn btn-info w-100 text-center">&#41</button></td>
+                    <td><button onclick="get_num('&#41')" class="btn btn-info w-100 text-center">[ ]</button></td>
+
+                </tr>
+
+                <tr>
+                    <td><button onclick="get_num('0')" class="btn btn-secondary w-100 text-center">00</button></td>
+                    <td><button onclick="getResult('&#44')" class="btn btn-info w-100 text-center">&#44</button></td>
+                    <td><button onclick="get_num('.')" class="btn btn-info w-100 text-center">.</button></td>
+                    <td><button onclick="getResult()" class="btn btn-danger w-100 text-center"><i class="fa-solid fa-equals"></i></button></td>
 
                 </tr>
             </tbody>
